@@ -1,2 +1,2 @@
 # homebrew-cli
-brew tap gphotosuploader/cli
+brew tap gphotosuploader/tap
