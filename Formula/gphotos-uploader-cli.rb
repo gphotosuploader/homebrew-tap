@@ -2,16 +2,16 @@
 class GphotosUploaderCli < Formula
   desc "Mass upload media folders to your Google Photos account(s)"
   homepage "https://github.com/gphotosuploader/gphotos-uploader-cli"
-  version "0.8.1"
+  version "0.8.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v0.8.1/gphotos-uploader-cli_0.8.1_darwin_amd64.tar.gz"
-    sha256 "4a0fb7161640b6eb7995d36d4b5fde1d56df06ff24dd7b265ed4b74befed624f"
+    url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v0.8.2/gphotos-uploader-cli_0.8.2_darwin_amd64.tar.gz"
+    sha256 "b89bbbcdc084daba1e5041e85c220f12ebb3326822f448a363f9d230c8f9604c"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v0.8.1/gphotos-uploader-cli_0.8.1_linux_amd64.tar.gz"
-      sha256 "59c1b25f0f6b488481054febf719873ea5b7501d55d2158ab58b55a0f45fab31"
+      url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v0.8.2/gphotos-uploader-cli_0.8.2_linux_amd64.tar.gz"
+      sha256 "5c255d74e9e85fc5069f90e0a92bf2a2b120bd002fb5529eebc87e1441802940"
     end
   end
 
