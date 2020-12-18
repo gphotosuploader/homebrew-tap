@@ -7,11 +7,11 @@ class GphotosUploaderCli < Formula
 
   if OS.mac?
     url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v2.0.0/gphotos-uploader-cli_2.0.0_darwin_amd64.tar.gz"
-    sha256 "8350ee52cd71f5d4df9d403adb20f3a5e2dbd4b3eeaee02addacd397239f5cef"
+    sha256 "caf7751aff0f7149bc63f7203f5e8a694579518480575fae7409e095a6d4ecd6"
   end
   if OS.linux? && Hardware::CPU.intel?
     url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v2.0.0/gphotos-uploader-cli_2.0.0_linux_amd64.tar.gz"
-    sha256 "aa231212d6062aac152d78df2fdbb7ed1fea0fe5583d10da53aa42154a0a3f7e"
+    sha256 "331acaac8dc9bef3677201f6e7f61be1a3b3e34a4d7f413ce086cf66116dd36f"
   end
 
   def install
