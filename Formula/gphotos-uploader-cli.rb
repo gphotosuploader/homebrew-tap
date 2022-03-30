@@ -5,23 +5,31 @@
 class GphotosUploaderCli < Formula
   desc "Mass upload media folders to your Google Photos account(s)"
   homepage "https://github.com/gphotosuploader/gphotos-uploader-cli"
-  version "3.3.0"
+  version "3.3.1"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v3.3.0/gphotos-uploader-cli_3.3.0_darwin_amd64.tar.gz"
-      sha256 "699ec83b22b024895d7a186c6ff705ad0163add66bf0af4191ac13dec9746dca"
+    url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v3.3.1/gphotos-uploader-cli_3.3.1_darwin_amd64.tar.gz"
+    sha256 "3f3ec4d493f592164650a518b854f040b395f81824c687e1ebb09571b5c446fa"
 
-      def install
-        bin.install "gphotos-uploader-cli"
+    def install
+      bin.install "gphotos-uploader-cli"
+    end
+
+    if Hardware::CPU.arm?
+      def caveats
+        <<~EOS
+          The darwin_arm64 architecture is not supported for the GphotosUploaderCli
+          formula at this time. The darwin_amd64 binary may work in compatibility
+          mode, but it might not be fully supported.
+        EOS
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v3.3.0/gphotos-uploader-cli_3.3.0_linux_amd64.tar.gz"
-      sha256 "5f465e3f6499f6acdb10b277c0dc34efa5a29729b6771cfa3d09b16917f9d598"
+      url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v3.3.1/gphotos-uploader-cli_3.3.1_linux_amd64.tar.gz"
+      sha256 "b087aa16d4d796828d374b32e598b8601b8e1cf690a6b732cd06dc1aa4a89c36"
 
       def install
         bin.install "gphotos-uploader-cli"
