@@ -9,7 +9,7 @@ class GphotosUploaderCli < Formula
 
   on_macos do
     url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v4.0.0-alpha-01/gphotos-uploader-cli_4.0.0-alpha-01_darwin_amd64.tar.gz"
-    sha256 "e1f0d5af64596107250d326a3bc779e7ec5b70aee1ee5b661a463de7a9f5deaf"
+    sha256 "e89f8d8efa775c983f9a4c920ed44f4792e48af5d474fdc987d80eb4681001be"
 
     def install
       bin.install "gphotos-uploader-cli"
@@ -29,7 +29,7 @@ class GphotosUploaderCli < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v4.0.0-alpha-01/gphotos-uploader-cli_4.0.0-alpha-01_linux_amd64.tar.gz"
-      sha256 "c492fe1a3bcd923aa06d2940e74b798607df4e30a4f4f645a6e431752fed12d9"
+      sha256 "6f11d33f474610ebdc21563824e4fcd265861adbe30975fd4957f3625d30cd66"
 
       def install
         bin.install "gphotos-uploader-cli"
