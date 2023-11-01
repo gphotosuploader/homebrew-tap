@@ -5,11 +5,11 @@
 class GphotosUploaderCli < Formula
   desc "Mass upload media folders to your Google Photos account(s)"
   homepage "https://github.com/gphotosuploader/gphotos-uploader-cli"
-  version "4.2.0-rc1"
+  version "4.2.0"
 
   on_macos do
-    url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v4.2.0-rc1/gphotos-uploader-cli_4.2.0-rc1_darwin_amd64.tar.gz"
-    sha256 "8eeaf2d3ff9cdbb3176dcc5f07e1f3f7958ed06ea7c84c5ee07d4e6a79e48b2e"
+    url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v4.2.0/gphotos-uploader-cli_4.2.0_darwin_amd64.tar.gz"
+    sha256 "7fbbb58d78619d242ac7829c1c62e2c9a357ff88e7a70670073b7d9b1e222ce0"
 
     def install
       bin.install "gphotos-uploader-cli"
@@ -28,8 +28,8 @@ class GphotosUploaderCli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v4.2.0-rc1/gphotos-uploader-cli_4.2.0-rc1_linux_amd64.tar.gz"
-      sha256 "cc1fc9a33e046dc2119fd8b65383439b7597a23b92b12d3bac2019b1db90bdfa"
+      url "https://github.com/gphotosuploader/gphotos-uploader-cli/releases/download/v4.2.0/gphotos-uploader-cli_4.2.0_linux_amd64.tar.gz"
+      sha256 "f3c4e5886afa0ba3001768c1864867cf656c871ef0c5bed4b551532ac6e259bb"
 
       def install
         bin.install "gphotos-uploader-cli"
